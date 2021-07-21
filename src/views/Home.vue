@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Choose your local surf spot</h1>
+    <surf-spots />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import SurfSpots from '../components/SurfSpots.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    SurfSpots
   }
 }
 </script>
+
+<style scoped>
+.home {
+  height: 100vh;
+}
+</style>
