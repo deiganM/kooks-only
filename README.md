@@ -22,3 +22,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+"# kooks-only"  git init git add README.md git commit -m "first commit" git branch -M main git remote add origin git@github.com:deiganM/kooks-only.git git push -u origin main
