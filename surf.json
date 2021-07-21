@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Long Beach",
+    "swell": "2-3ft"
+  },
+  {
+    "id": 2,
+    "title": "Chesterman Beach (North)",
+    "swell": "1-2ft"
+  },
+  {
+    "id": 3,
+    "title": "Chesterman Beach (South)",
+    "swell": "2-3ft"
+  },
+  {
+    "id": 4,
+    "title": "Wickaninnish",
+    "swell": "2-3ft"
+  },
+  {
+    "id": 5,
+    "title": "Cox Bay",
+    "swell": "2ft"
+  },
+  {
+    "id": 6,
+    "title": "Sombrio",
+    "swell": "1-2ft"
+  },
+  {
+    "id": 7,
+    "title": "Jordan River",
+    "swell": "Flat"
+  }
+]

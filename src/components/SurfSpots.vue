@@ -1,29 +1,26 @@
 <template>
   <div class="main-container">
-    <div class="spots">
-      <div class="border">
-        hello
+    <div class="surf-spot-container">
+      <div class="location-container">
+        <p>Long Beach</p>
       </div>
-      <div class="border">
-        world
+      <div class="location-container">
+        <p>Chesterman Beach (North)</p>
       </div>
-      <div class="border">
-        these
+      <div class="location-container">
+        <p>Chesterman Beach (South)</p>
       </div>
-      <div class="border">
-        are
+      <div class="location-container">
+        <p>Wickaninnish</p>
       </div>
-      <div class="border">
-        your
+      <div class="location-container">
+        <p>Cox Bay</p>
       </div>
-      <div class="border">
-        favourite
+      <div class="location-container">
+        <p>Sombrio</p>
       </div>
-      <div class="border">
-        surf
-      </div>
-      <div class="border">
-        spots!
+      <div class="location-container">
+        <p>Jordan River</p>
       </div>
     </div>
   </div>
@@ -39,21 +36,24 @@ export default {
 .main-container {
   display: flex;
   justify-content: center;
+  /* height: 100vh; */
 }
-.spots {
+.surf-spot-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 80vw;
-  height: 100vh;
-  
+  justify-content:center;
+  width: 80vw;
+  /* height: 100%; */
+  padding: 2rem 1rem;
   background: lightgreen;
 }
 
-.border {
+.location-container {
+  display: flex;
+  justify-content: center;
   border: solid rgb(51, 66, 131) 2px;
-  height: 25vh;
-  width: 25vw;
-  /* margin: 10px */
+  height: 200px;
+  width: 200px;
+  margin: 10px;
 }
 </style>
