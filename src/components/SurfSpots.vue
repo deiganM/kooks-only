@@ -1,40 +1,36 @@
 <template>
   <div class="main-container">
-    <div class="surf-spot-container">
-      <div class="location-container">
-        <h3>{{longBeach.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{longBeach.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{chestermanN.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{chestermanN.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{chestermanS.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{chestermanS.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{wickaninnish.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{wickaninnish.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{coxBay.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{coxBay.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{Sombrio.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{Sombrio.swell}}</b>
-      </div>
-      <div class="location-container">
-        <h3>{{jordanRiver.title}}</h3>
-        <p>Swell Size</p>
-        <b>{{jordanRiver.swell}}</b>
+    <h1>Choose your surf spot</h1>
+    <div class="card-container">
+      <div class="surf-spot-container">
+        <div class="location-container">
+          <h3>{{longBeach.title}}</h3>
+          <b>{{longBeach.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{chestermanN.title}}</h3>
+          <b>{{chestermanN.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{chestermanS.title}}</h3>
+          <b>{{chestermanS.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{wickaninnish.title}}</h3>
+          <b>{{wickaninnish.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{coxBay.title}}</h3>
+          <b>{{coxBay.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{Sombrio.title}}</h3>
+          <b>{{Sombrio.swell}}</b>
+        </div>
+        <div class="location-container">
+          <h3>{{jordanRiver.title}}</h3>
+          <b>{{jordanRiver.swell}}</b>
+        </div>
       </div>
     </div>
   </div>
@@ -47,37 +43,13 @@ export default {
   name: 'SurfSpots',
   data() {
     return{
-      spots: [],
-      longBeach: {
-        id:'',
-        title:'',
-        swell:'',
-      },
-      chestermanN: {
-        id:'',
-        title:'',
-        swell:'',
-      },
-      chestermanS: {
-        id:'',
-        title:'',
-        swell:'',
-      },
-      wickaninnish: {
-        id:'',
-        title:'',
-        swell:'',
-      },
-      coxBay: {
-        id:'',
-        title:'',
-        swell:'',
-      },
-      Sombrio: {
-        id:'',
-        title:'',
-        swell:'',
-      },
+      // Why does this work?
+      longBeach: {},
+      chestermanN: {},
+      chestermanS: {},
+      wickaninnish: {},
+      coxBay: {},
+      Sombrio: {},
       jordanRiver: {
         id:'',
         title:'',
@@ -128,26 +100,48 @@ export default {
 
 <style>
 .main-container {
+  background: #38A3A5;
+  min-height: 100vh;
+}
+
+.main-container h1 {
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
+.card-container {
   display: flex;
   justify-content: center;
   /* height: 100vh; */
 }
+
 .surf-spot-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
-  width: 80vw;
+  justify-content: center;
+  width: 100vw;
   /* height: 100%; */
   padding: 2rem 1rem;
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 
 .location-container {
   /* display: flex;
-  justify-content: center; */
+  flex-direction: column;
+  justify-content:center; */
   border: solid rgb(51, 66, 131) 2px;
+  border-radius: 3px;
+  background: #c7f9cc;
   height: 200px;
   width: 200px;
   margin: 10px;
+}
+
+.location-container h3 {
+  padding-top: 16px;
+}
+
+.swell-size {
+  display: flex;
 }
 </style>

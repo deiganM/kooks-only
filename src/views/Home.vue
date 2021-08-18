@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h1>Choose your local surf spot</h1>
     <surf-spots />
   </div>
 </template>
@@ -18,7 +17,5 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  height: 100vh;
-}
+
 </style>
